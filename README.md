@@ -88,4 +88,28 @@ $ docker run --rm -v `pwd`:/docs tmj-sphinx:0.1 make html
 $ open build/html/index.html  # Webブラウザで画面を見て確認
 ```
 
-### 3.4 Remote - Containers で
+### 3.4 Remote - Containers から起動
+
+以下の手順でVSCodeのRemote-Containersから起動する。
+
+#### (1) VSCode で sphixフォルダを開く
+
+```bash
+# sphinx フォルダでVSCodeを起動
+$ code .
+```
+
+#### (2) 起動後、ウィンドウ左下隅のアイコンをクリック
+
+<img src="./.README.md.images/rc-icon.png" height=165 width=390 />
+
+
+#### (3) コマンドパレットから "Reopen in Container" を選択
+
+<img src="./.README.md.images/cmdpallete.png" height=165 width=390 />
+
+これでコンテナ内でSphinxを開くことができました。
+
+### 3.5 ビルドの実行確認
+
+VSCodeのTerminalを開くと、最初から "/docs" フォルダが開かれます。ビルドするには、`make html` を実行します。正しくビルドできたら成功です。"build/html/index.html"ファイルが出力されるので、それをブラウザで開くと正しくビルドできていることが確認できます。

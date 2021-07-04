@@ -14,6 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
+import sphinx_fontawesome
 
 # -- Project information -----------------------------------------------------
 
@@ -35,7 +36,9 @@ release = '0.1'
 # ones.
 extensions = [
   "sphinx.ext.todo",
-  "sphinx_rtd_theme"
+  "sphinx_rtd_theme",
+  "sphinx_fontawesome",
+  "sphinx_tsegsearch"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -63,6 +66,13 @@ html_theme = "sphinx_rtd_theme"
 
 # Enable Todo list.
 todo_include_todos = True
+
+# i18n settings:
+# * set the language after translation to ja
+# * set translation folders to locale
+language = 'ja'
+locale_dirs = ['locale']
+gettext_compact = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

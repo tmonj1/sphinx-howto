@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, tmj
+# This file is distributed under the same license as the Sphinxによるドキュメント作成
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sphinxによるドキュメント作成 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-04 06:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/reference.rst:3
+msgid "参考文献"
+msgstr ""
+
+#: ../../source/reference.rst:5
+msgid "`Sphinx公式解説ページ (日本語) <https://www.sphinx-doc.org/ja/master/index.html>`_"
+msgstr ""
+
+#: ../../source/reference.rst:6
+msgid ""
+"`Sphinx - 設定 <https://www.sphinx-"
+"doc.org/ja/master/usage/configuration.html>`_ ・・・conf.pyの設定の詳細はこちら"
+msgstr ""
+
+#: ../../source/reference.rst:7
+msgid ""
+"`ブロック図生成ツール blockdiag <http://blockdiag.com/ja/#>`_ "
+"・・・ブロック図やシーケンス図を生成できるShpinx機能拡張の公式ページ"
+msgstr ""
+
