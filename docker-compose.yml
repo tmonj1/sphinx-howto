@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  sphinx:
+    image: tmj-sphinx:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/docs
