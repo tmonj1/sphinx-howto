@@ -37,7 +37,12 @@ release = '0.1'
 extensions = [
   "sphinx.ext.todo",
   "sphinx_rtd_theme",
+  "sphinxcontrib.trimblank",
   "sphinx_fontawesome",
+  "sphinxcontrib.blockdiag",
+  "sphinxcontrib.seqdiag",
+  "sphinxcontrib.actdiag",
+  "sphinxcontrib.nwdiag",
   "sphinx_tsegsearch"
 ]
 
@@ -74,6 +79,9 @@ language = 'ja'
 locale_dirs = ['locale']
 gettext_compact = False
 
+# Keep blanks to adjacent to ascii characters in html documents
+trimblank_keep_alnum_blank = ['html', 'singlehtml']
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -81,3 +89,8 @@ html_static_path = ['_static']
 
 # enable auto-numbering for figures, tables and code blocks.
 numfig = True
+
+# common definition file
+rst_prolog= u"""
+.. include:: definitions.txt
+"""

@@ -1,5 +1,5 @@
 =============================================
-Sphinxによるドキュメント作成
+|title|
 =============================================
 
 Sphinxはドキュメント生成ツールです。reStructuredText形式で書かれた文書をHTMLやPDFなどの形式に変換します。
@@ -17,9 +17,7 @@ Todo's
 
 .. todolist::
 
-Indices and tables
+索引
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

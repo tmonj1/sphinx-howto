@@ -1,7 +1,15 @@
 FROM sphinxdoc/sphinx:4.0.2
 
 #
-# Extensions
+# Debian packages
+#
+RUN apt-get update && \
+    apt-get install -y latexmk && \
+    apt-get install -y texlive-lang-cjk && \
+    apt-get install -y texlive-formats-extra
+
+#
+# Sphinx Extensions
 #
 
 # Read the Docs theme (https://sphinx-rtd-theme.readthedocs.io/en/stable/)
@@ -15,6 +23,15 @@ RUN pip install sphinx_fontawesome
 
 # autobuild
 RUN pip install sphinx-autobuild
+
+# trim redandunt space in Japanese text.
+RUN pip install sphinxcontrib-trimblank
+
+# blockdiag extensions
+RUN pip install sphinxcontrib-blockdiag \
+                sphinxcontrib-seqdiag \
+                sphinxcontrib-actdiag \
+                sphinxcontrib-nwdiag
 
 # tseg search for better Japanese search
 #   and a patch for tseg search for python 4 (https://github.com/whosaysni/sphinx-tsegsearch/pull/3)

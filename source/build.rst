@@ -8,7 +8,7 @@
 =================================
 
 VSCode から Terminal を開き、/docs フォルダに移動します (デフォルトでこのフォルダが開かれているはずです)。
-そこで ``make html`` コマンドを実行します。
+そこで ``make html`` コマンドを実行します。ビルドが成功すると `build/html` フォルダにHTMLが出力されます。
 
 .. sourcecode:: bash
 
@@ -22,9 +22,18 @@ autobuild エクステンションをインストールしているので、ソ�
 
 .. sourcecode:: bash
 
-  $ autobuild source build
+  $ sphinx-autobuild source build
 
-コマンドを打つといったんビルドが実行され、``localhost:8080`` でページが参照できるようになります。以降、ソースファイルを更新するごとにビルドが実行されるので、``localhost:8080`` をリロードすればすぐに結果が見られるようになります。
+コマンドを打つといったんビルドが実行され、``localhost:8080`` でページが参照できるようになります。以降、ソースファイルを更新するごとにビルドが実行されるので、``localhost:8080`` をリロードすればすぐに結果が見られるようになります。ポート番号を変更したいときは、`--port` オプションで
+ポート番号を指定してください。
+
+`sphinx-autobuild` は Makefile に `livehtml` として定義してあるので、以下のコマンドでもOKです。
+
+.. sourcecode:: bash
+
+  $ make livehtml
+
+autobuild についての詳しい情報はこちらを参照してください： `sphinx-autobuild <https://pypi.org/project/sphinx-autobuild/>`_
 
 3. 国際化対応
 =================================
