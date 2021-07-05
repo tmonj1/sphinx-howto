@@ -10,6 +10,7 @@ Sphinxはドキュメント生成ツールです。reStructuredText形式で書�
 
    rest
    build
+   figure
    reference
 
 Todo's
