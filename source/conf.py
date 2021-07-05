@@ -90,6 +90,10 @@ html_static_path = ['_static']
 # enable auto-numbering for figures, tables and code blocks.
 numfig = True
 
+# blockdiag
+blockdiag_html_image_format = "SVG"
+blockdiag_latex_image_format = "SVG"
+
 # common definition file
 rst_prolog= u"""
 .. include:: definitions.txt
