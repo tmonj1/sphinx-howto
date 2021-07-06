@@ -3,6 +3,8 @@ FROM sphinxdoc/sphinx:4.0.2
 #
 # Debian packages
 #
+
+# Components required for building PDF documents
 RUN apt-get update && \
     apt-get install -y latexmk && \
     apt-get install -y texlive-lang-cjk && \

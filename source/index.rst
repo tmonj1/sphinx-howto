@@ -8,6 +8,7 @@ Sphinxはドキュメント生成ツールです。reStructuredText形式で書�
    :maxdepth: 1
    :caption: 目次
 
+   setup
    rest
    build
    figure
