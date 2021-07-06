@@ -9,6 +9,8 @@ blockdiagエクステンション (http://blockdiag.com/ja/index.html) を使う
 
 .. blockdiag::
   :desctable:
+  :align: center
+  :width: 600
   
   blockdiag {
      A -> B -> C;
@@ -22,6 +24,8 @@ blockdiagエクステンション (http://blockdiag.com/ja/index.html) を使う
 
 .. seqdiag::
   :desctable:
+  :align: center
+  :width: 800
 
   seqdiag {
      A -> B -> C;
@@ -34,6 +38,9 @@ blockdiagエクステンション (http://blockdiag.com/ja/index.html) を使う
 =================================
 
 .. actdiag::
+  :desctable:
+  :align: center
+  :width: 800
 
   actdiag {
       write -> convert -> image
@@ -52,6 +59,8 @@ blockdiagエクステンション (http://blockdiag.com/ja/index.html) を使う
 
 .. nwdiag::
   :desctable:
+  :align: center
+  :width: 800
 
   nwdiag {
      network {

@@ -92,7 +92,14 @@ numfig = True
 
 # blockdiag
 blockdiag_html_image_format = "SVG"
-blockdiag_latex_image_format = "SVG"
+seqdiag_html_image_format = "SVG"
+actdiag_html_image_format = "SVG"
+nwdiag_html_image_format = "SVG"
+#blockdiag_latex_image_format = "SVG"
+blockdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
+seqdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
+actdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
+nwdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
 
 # common definition file
 rst_prolog= u"""

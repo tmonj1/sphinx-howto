@@ -33,7 +33,8 @@ RUN pip install sphinxcontrib-trimblank
 RUN pip install sphinxcontrib-blockdiag \
                 sphinxcontrib-seqdiag \
                 sphinxcontrib-actdiag \
-                sphinxcontrib-nwdiag
+                sphinxcontrib-nwdiag \
+                reportlab
 
 # tseg search for better Japanese search
 #   and a patch for tseg search for python 4 (https://github.com/whosaysni/sphinx-tsegsearch/pull/3)
