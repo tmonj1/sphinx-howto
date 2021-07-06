@@ -11,7 +11,14 @@ RUN apt-get update && \
     apt-get install -y texlive-formats-extra
 
 #
-# Sphinx Extensions
+# Python packages
+#
+
+# code formatter
+RUN pip install autopep8
+
+#
+# Sphinx extensions
 #
 
 # Read the Docs theme (https://sphinx-rtd-theme.readthedocs.io/en/stable/)

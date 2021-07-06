@@ -35,15 +35,15 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-  "sphinx.ext.todo",
-  "sphinx_rtd_theme",
-  "sphinxcontrib.trimblank",
-  "sphinx_fontawesome",
-  "sphinxcontrib.blockdiag",
-  "sphinxcontrib.seqdiag",
-  "sphinxcontrib.actdiag",
-  "sphinxcontrib.nwdiag",
-  "sphinx_tsegsearch"
+    "sphinx.ext.todo",
+    "sphinx_rtd_theme",
+    "sphinxcontrib.trimblank",
+    "sphinx_fontawesome",
+    "sphinxcontrib.blockdiag",
+    "sphinxcontrib.seqdiag",
+    "sphinxcontrib.actdiag",
+    "sphinxcontrib.nwdiag",
+    "sphinx_tsegsearch"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -102,6 +102,6 @@ actdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
 nwdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
 
 # common definition file
-rst_prolog= u"""
+rst_prolog = u"""
 .. include:: definitions.txt
 """

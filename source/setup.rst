@@ -114,7 +114,7 @@ Read the Docs テーマをプレインストールした Dockerfileを以下の�
 
 Docker Compose ファイルの作成は必須ではないありませんが、あると docker コマンドの細かい引数を覚えなくてもいいので一応作っておきます。
 
-.. sourcecode:: docker-compose
+.. sourcecode::
 
   version: '3.8'
   
