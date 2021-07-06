@@ -1,15 +1,15 @@
 # sphinx-devcontainer
 
 sphinx-devcontainer is a setup of Sphinx document creation environment using VSCode and Remote-Container extension.
-Using this repo, you can start writing technical document quickly without downloading ,installing and configuring
+Using this repo, you can quickly start writing technical document without downloading ,installing and configuring
 lots of tools and libraries.
 
 ## 1. Requirements
 
 1. Docker
 1. VSCode
-1. VSCode機能拡張: Remote - Containers
-1. VSCode機能拡張: reStructuredText
+1. VSCode extension: Remote - Containers
+1. VSCode extension: reStructuredText
 
 ## 2. How to Use
 
@@ -58,7 +58,7 @@ Then, try the first build:
 $ make html
 ```
 
-Or, start autobuild:
+It is also possible to use autobuild:
 
 ```bash
 $ make livehtml
@@ -66,6 +66,7 @@ $ make livehtml
 
 ## 3. Folder Structure
 
+```
 $ tree .
 .
 ├── Dockerfile
@@ -80,6 +81,7 @@ $ tree .
     ├── definition.txt
     ├── conf.py
     └── index.rst
+```
 
 ## 4. Preinstall sphinx extensions
 
