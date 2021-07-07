@@ -14,6 +14,12 @@ help:
 
 .PHONY: help Makefile
 
+html-ja:
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" -D language=ja $(SPHINXOPTS) $(O)
+
+html-en:
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" -D language=en $(SPHINXOPTS) $(O)
+
 livehtml:
 	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
