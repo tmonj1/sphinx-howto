@@ -28,16 +28,16 @@ $ cd sphinx-devcontainer
 code .
 ```
 
-#### (3) Click the Dev Container icon at the left bottom corner
+### (3) Click the Dev Container icon at the left bottom corner
 
 <img src="./source/images/rc-icon.png" height=165 width=390 />
 
 
-#### (4) Choose "Reopen with VSCode" on the Command Pallete
+### (4) Choose "Reopen with VSCode" on the Command Pallete
 
 <img src="./source/images/cmdpallete.png" height=165 width=390 />
 
-#### (5) Start writing your own contents
+### (5) Start writing your own contents
 
 Now you can start writing your own contents. The first thing you should do is edit conf.py for project settings.
 
