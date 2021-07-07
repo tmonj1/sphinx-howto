@@ -102,3 +102,13 @@ Sphinx extensions are listed in Dockerfile.
 * hinxcontrib-seqdiag
 * sphinxcontrib-actdiag
 * sphinxcontrib-nwdiag
+
+## 5. Markdown (experimental)
+
+It is possible not only to write sphinx documents using Markdown, but also convert existing .rst files to .md.
+To do so, use `rst2myst` tool, which is included in this environment, too.
+
+There are at least a few problems in myst-parser:
+
+* definitions.txt are not available.
+* rst2myst is not 100% convertible.

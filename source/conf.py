@@ -43,7 +43,9 @@ extensions = [
     "sphinxcontrib.seqdiag",
     "sphinxcontrib.actdiag",
     "sphinxcontrib.nwdiag",
-    "sphinx_tsegsearch"
+    "sphinx_tsegsearch",
+    "myst_parser",
+    "sphinx_markdown_tables"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,7 +62,6 @@ language = 'ja'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -102,6 +103,13 @@ actdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
 nwdiag_fontpath = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
 
 # common definition file
-rst_prolog = u"""
-.. include:: definitions.txt
-"""
+# rst_prolog = u"""
+# .. include:: definitions.txt
+# """
+
+#
+# Markdown support
+#
+
+# include .md files as source
+source_suffix = ['.rst', '.md']

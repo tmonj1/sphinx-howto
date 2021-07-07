@@ -38,10 +38,18 @@ RUN pip install sphinxcontrib-trimblank
 
 # blockdiag extensions
 RUN pip install sphinxcontrib-blockdiag \
-                sphinxcontrib-seqdiag \
-                sphinxcontrib-actdiag \
-                sphinxcontrib-nwdiag \
-                reportlab
+    sphinxcontrib-seqdiag \
+    sphinxcontrib-actdiag \
+    sphinxcontrib-nwdiag \
+    reportlab
+
+# other seemingly usefull extensions
+#   pip install sphinx-panels
+#   sphinx-copybutton
+#   sphinx.ext.extlinks
+#   sphinx.ext.autosummary
+#   sphinx.ext.githubpages
+#   sphinx.ext.ifconfig
 
 # tseg search for better Japanese search
 #   and a patch for tseg search for python 4 (https://github.com/whosaysni/sphinx-tsegsearch/pull/3)
@@ -50,3 +58,8 @@ RUN pip install sphinx-tsegsearch==1.0 \
     && mv __init__.py __init__.py.org \
     && cat __init__.py.org | sed -e 's/add_javascript/add_js_file/' > __init__.py \
     && rm __init__.py.org
+
+# markdown support
+RUN pip install myst-parser \
+    sphinx-markdown-tables \
+    rst-to-myst[sphinx]
