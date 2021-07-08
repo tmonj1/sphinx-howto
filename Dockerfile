@@ -46,13 +46,8 @@ RUN pip install sphinxcontrib-blockdiag \
 # rstcheck (linter)
 RUN pip install rstcheck
 
-# other seemingly usefull extensions
-#   pip install sphinx-panels
-#   sphinx-copybutton
-#   sphinx.ext.extlinks
-#   sphinx.ext.autosummary
-#   sphinx.ext.githubpages
-#   sphinx.ext.ifconfig
+# panels and source copy button
+RUN pip install sphinx-panels sphinx-copybutton
 
 # tseg search for better Japanese search
 #   and a patch for tseg search for python 4 (https://github.com/whosaysni/sphinx-tsegsearch/pull/3)

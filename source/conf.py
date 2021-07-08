@@ -36,6 +36,8 @@ release = '0.1'
 # ones.
 extensions = [
     "sphinx.ext.todo",
+    "sphinx.ext.extlinks",
+    "sphinx.ext.ifconfig",
     "sphinx_rtd_theme",
     "sphinxcontrib.trimblank",
     "sphinx_fontawesome",
@@ -43,6 +45,8 @@ extensions = [
     "sphinxcontrib.seqdiag",
     "sphinxcontrib.actdiag",
     "sphinxcontrib.nwdiag",
+    "sphinx_copybutton",
+    "sphinx_panels",
     "sphinx_tsegsearch"
 ]
 

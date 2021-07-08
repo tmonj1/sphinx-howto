@@ -550,3 +550,26 @@ Font Awesome のアイコンが使えます。
 * check lg アイコン: :fa:`check lg`
 
 * square-o アイコン: :fa:`square-o`
+
+(4) パネル
+---------------------------------
+
+.. panels::
+
+  .. link-button:: https://example.com
+      :type: url
+      :tooltip: hallo
+      :classes: btn-success
+
+  ---
+
+  This entire panel is clickable.
+
+  +++
+
+  .. link-button:: setup
+      :type: ref
+      :text: "マニュアル開発環境の構築"を開く
+      :classes: btn-outline-primary btn-block stretched-link
+
+※ sphinx-panels extension を使うと "role 'fa' がすでに登録されているのでオーバーライドされる"との警告が表示される。もしかしたら fontawesomeと衝突しているのかもしれない。
