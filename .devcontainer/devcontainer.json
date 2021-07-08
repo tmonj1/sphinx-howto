@@ -21,7 +21,6 @@
 	"extensions": [
 		"lextudio.restructuredtext",
 		"himanoa.python-autopep8",
-		"rstcheck",
 		"ms-python.python"
 	]
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
