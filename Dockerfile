@@ -43,6 +43,9 @@ RUN pip install sphinxcontrib-blockdiag \
     sphinxcontrib-nwdiag \
     reportlab
 
+# rstcheck (linter)
+RUN pip install rstcheck
+
 # other seemingly usefull extensions
 #   pip install sphinx-panels
 #   sphinx-copybutton
