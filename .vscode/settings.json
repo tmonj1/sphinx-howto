@@ -1,4 +1,5 @@
 {
   "restructuredtext.builtDocumentationPath": "${workspaceFolder}/_build",
-  "restructuredtext.confPath": "${workspaceFolder}/source"
+  "restructuredtext.confPath": "${workspaceFolder}/source",
+  "extensions.ignoreRecommendations": false
 }
