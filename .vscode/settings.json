@@ -1,5 +1,6 @@
 {
   "restructuredtext.builtDocumentationPath": "${workspaceFolder}/_build",
   "restructuredtext.confPath": "${workspaceFolder}/source",
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "restructuredtext.pythonRecommendation.disabled": true
 }
